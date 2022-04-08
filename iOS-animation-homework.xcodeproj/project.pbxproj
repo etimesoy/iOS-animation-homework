@@ -13,6 +13,7 @@
 		44F9E6742800CD1000BB00D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F9E6722800CD1000BB00D3 /* Main.storyboard */; };
 		44F9E6762800CD1300BB00D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F9E6752800CD1300BB00D3 /* Assets.xcassets */; };
 		44F9E6792800CD1300BB00D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F9E6772800CD1300BB00D3 /* LaunchScreen.storyboard */; };
+		44F9E6832800D64300BB00D3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9E6822800D64300BB00D3 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		44F9E6752800CD1300BB00D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44F9E6782800CD1300BB00D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44F9E67A2800CD1300BB00D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F9E6822800D64300BB00D3 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		44F9E66B2800CD1000BB00D3 /* iOS-animation-homework */ = {
 			isa = PBXGroup;
 			children = (
-				44F9E66C2800CD1000BB00D3 /* AppDelegate.swift */,
-				44F9E66E2800CD1000BB00D3 /* SceneDelegate.swift */,
-				44F9E6702800CD1000BB00D3 /* ViewController.swift */,
-				44F9E6722800CD1000BB00D3 /* Main.storyboard */,
-				44F9E6752800CD1300BB00D3 /* Assets.xcassets */,
+				44F9E6812800D5EF00BB00D3 /* Resources */,
+				44F9E6802800D5E400BB00D3 /* UI components */,
 				44F9E6772800CD1300BB00D3 /* LaunchScreen.storyboard */,
 				44F9E67A2800CD1300BB00D3 /* Info.plist */,
 			);
 			path = "iOS-animation-homework";
+			sourceTree = "<group>";
+		};
+		44F9E6802800D5E400BB00D3 /* UI components */ = {
+			isa = PBXGroup;
+			children = (
+				44F9E6822800D64300BB00D3 /* CircleView.swift */,
+				44F9E6702800CD1000BB00D3 /* ViewController.swift */,
+				44F9E6722800CD1000BB00D3 /* Main.storyboard */,
+			);
+			path = "UI components";
+			sourceTree = "<group>";
+		};
+		44F9E6812800D5EF00BB00D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44F9E66C2800CD1000BB00D3 /* AppDelegate.swift */,
+				44F9E66E2800CD1000BB00D3 /* SceneDelegate.swift */,
+				44F9E6752800CD1300BB00D3 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F9E6832800D64300BB00D3 /* CircleView.swift in Sources */,
 				44F9E6712800CD1000BB00D3 /* ViewController.swift in Sources */,
 				44F9E66D2800CD1000BB00D3 /* AppDelegate.swift in Sources */,
 				44F9E66F2800CD1000BB00D3 /* SceneDelegate.swift in Sources */,
@@ -203,6 +223,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -217,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -264,6 +285,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -272,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BU5S75BK7N;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-animation-homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,16 +320,17 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ITIS.iOS-animation-homework";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITIS.iOS-animation-homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BU5S75BK7N;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS-animation-homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,16 +350,17 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ITIS.iOS-animation-homework";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ITIS.iOS-animation-homework";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
