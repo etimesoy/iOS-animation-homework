@@ -8,6 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private lazy var circleView: CircleView = {
+        let width: CGFloat = 200
+        let height = width
+        let x = (view.frame.width - width) / 2
+        let y = (view.frame.height - height) / 2
+        
+        return CircleView(frame: CGRect(x: x, y: y, width: width, height: height))
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +24,8 @@ class ViewController: UIViewController {
     }
     
     private func addSubviews() {
-        let circleWidth: CGFloat = 200
-        let circleHeight = circleWidth
-        let circleX = (view.frame.width - circleWidth) / 2
-        let circleY = (view.frame.height - circleHeight) / 2
-        
-        let circleView = CircleView(frame: CGRect(x: circleX, y: circleY, width: circleWidth, height: circleHeight))
-        
         view.addSubview(circleView)
         
-        circleView.animateCircle(duration: 1.0)
+        circleView.animateCircle(duration: 3.0)
     }
 }
