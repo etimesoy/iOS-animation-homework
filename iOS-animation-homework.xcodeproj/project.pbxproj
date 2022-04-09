@@ -14,6 +14,8 @@
 		44F9E6762800CD1300BB00D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F9E6752800CD1300BB00D3 /* Assets.xcassets */; };
 		44F9E6792800CD1300BB00D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F9E6772800CD1300BB00D3 /* LaunchScreen.storyboard */; };
 		44F9E6832800D64300BB00D3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9E6822800D64300BB00D3 /* CircleView.swift */; };
+		44F9E68A2801A3CF00BB00D3 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9E6892801A3CF00BB00D3 /* InitialViewController.swift */; };
+		44F9E68C2801C02400BB00D3 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9E68B2801C02400BB00D3 /* Animator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		44F9E6782800CD1300BB00D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44F9E67A2800CD1300BB00D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F9E6822800D64300BB00D3 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		44F9E6892801A3CF00BB00D3 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		44F9E68B2801C02400BB00D3 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,9 @@
 			children = (
 				44F9E6822800D64300BB00D3 /* CircleView.swift */,
 				44F9E6702800CD1000BB00D3 /* ViewController.swift */,
+				44F9E6892801A3CF00BB00D3 /* InitialViewController.swift */,
 				44F9E6722800CD1000BB00D3 /* Main.storyboard */,
+				44F9E68B2801C02400BB00D3 /* Animator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F9E68C2801C02400BB00D3 /* Animator.swift in Sources */,
 				44F9E6832800D64300BB00D3 /* CircleView.swift in Sources */,
 				44F9E6712800CD1000BB00D3 /* ViewController.swift in Sources */,
+				44F9E68A2801A3CF00BB00D3 /* InitialViewController.swift in Sources */,
 				44F9E66D2800CD1000BB00D3 /* AppDelegate.swift in Sources */,
 				44F9E66F2800CD1000BB00D3 /* SceneDelegate.swift in Sources */,
 			);
