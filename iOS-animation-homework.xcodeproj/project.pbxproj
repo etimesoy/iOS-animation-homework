@@ -59,21 +59,21 @@
 			isa = PBXGroup;
 			children = (
 				44F9E6812800D5EF00BB00D3 /* Resources */,
-				44F9E6802800D5E400BB00D3 /* UI components */,
+				44F9E6802800D5E400BB00D3 /* Views */,
 				44F9E6772800CD1300BB00D3 /* LaunchScreen.storyboard */,
 				44F9E67A2800CD1300BB00D3 /* Info.plist */,
 			);
 			path = "iOS-animation-homework";
 			sourceTree = "<group>";
 		};
-		44F9E6802800D5E400BB00D3 /* UI components */ = {
+		44F9E6802800D5E400BB00D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				44F9E6822800D64300BB00D3 /* CircleView.swift */,
 				44F9E6702800CD1000BB00D3 /* ViewController.swift */,
 				44F9E6722800CD1000BB00D3 /* Main.storyboard */,
 			);
-			path = "UI components";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		44F9E6812800D5EF00BB00D3 /* Resources */ = {
