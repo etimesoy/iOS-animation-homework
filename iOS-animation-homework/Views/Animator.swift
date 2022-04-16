@@ -16,10 +16,12 @@ final class Animator: NSObject, UIViewControllerAnimatedTransitioning {
     private var selectedImageViewSnapshot: UIView
     private let imageViewRect: CGRect
     
-    init?(type: PresentationType,
-         from fromViewController: InitialViewController,
-         to toViewController: ViewController,
-         selectedImageViewSnapshot: UIView) {
+    init?(
+        type: PresentationType,
+        from fromViewController: InitialViewController,
+        to toViewController: ViewController,
+        selectedImageViewSnapshot: UIView
+    ) {
         self.type = type
         self.fromViewController = fromViewController
         self.toViewController = toViewController
@@ -55,6 +57,9 @@ final class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         let backgroundView: UIView
         let fadeView = UIView(frame: containerView.bounds)
         fadeView.backgroundColor = toViewController.view.backgroundColor
+        if isPresenting {
+            selectedImageView.isHidden = true
+        }
         
         if isPresenting {
             selectedImageViewSnapshot = flagImageSnapshot
@@ -76,7 +81,7 @@ final class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         let controllerImageViewRect = toViewController.flagImageView.convert(toViewController.flagImageView.bounds,
                                                                              to: window)
         let crossImageViewRect = toViewController.crossImageView.convert(toViewController.crossImageView.bounds,
-                                                                      to: window)
+                                                                         to: window)
         [selectedImageViewSnapshot, controllerImageSnapshot].forEach {
             $0.frame = isPresenting ? imageViewRect : controllerImageViewRect
         }
@@ -107,8 +112,10 @@ final class Animator: NSObject, UIViewControllerAnimatedTransitioning {
             
             toView.alpha = 1
             transitionContext.completeTransition(true)
+            if !isPresenting {
+                selectedImageView.isHidden = false
+            }
         }
-
     }
 }
 
